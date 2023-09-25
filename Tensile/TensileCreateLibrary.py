@@ -1260,7 +1260,7 @@ def TensileCreateLibrary():
 
   arguments["CpuThreads"] = args.CpuThreads
   arguments["PrintLevel"] = args.PrintLevel
-  arguments["IgnoreAsmCapCache"] = args.IgnoreAsmCapCache
+  arguments["IgnoreAsmCapCache"] = True # args.IgnoreAsmCapCache
   
   for key, value in args.global_parameters:
     arguments[key] = value
